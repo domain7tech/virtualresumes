@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #1e1e24;
+  color: #e6e6e6;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #2c2c34;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 2px solid #444;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f2c57c; /* warm pastel yellow */
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  color: #a3d9a5; /* soft leaf green */
+  margin-top: 0.5rem;
+}
+
+header .contact {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+header .contact a {
+  color: #80d1c7; /* seafoam */
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #ecc6c6; /* faded rose */
+  border-bottom: 2px solid #6b4c7c;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  color: #d5aaff;
+  margin-top: 1.2rem;
+}
+
+article span {
+  font-size: 0.95rem;
+  color: #888;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #f2c57c;
+}
