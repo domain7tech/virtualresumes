@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,21 +7,21 @@
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  background-color: #1e1e24;
-  color: #e6e6e6;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f9fb;
+  color: #2e2e2e;
+  line-height: 1.75;
   padding: 2rem;
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  background: #2c2c34;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  border: 2px solid #444;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #ddd;
 }
 
 header {
@@ -30,38 +30,39 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  color: #f2c57c; /* warm pastel yellow */
+  color: #1a1a1a;
 }
 
 header .subtitle {
-  font-size: 1.2rem;
-  color: #a3d9a5; /* soft leaf green */
-  margin-top: 0.5rem;
+  font-size: 1.15rem;
+  color: #555;
+  margin-top: 0.25rem;
 }
 
 header .contact {
-  margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: #aaa;
+  color: #555;
+  margin-top: 0.4rem;
 }
 
 header .contact a {
-  color: #80d1c7; /* seafoam */
+  color: #0a58ca;
   text-decoration: none;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
-  font-size: 1.6rem;
-  color: #ecc6c6; /* faded rose */
-  border-bottom: 2px solid #6b4c7c;
+  font-size: 1.5rem;
+  color: #183153;
+  border-bottom: 2px solid #e5e5e5;
   margin-bottom: 1rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.4rem;
+  font-weight: 600;
 }
 
 ul {
@@ -69,23 +70,24 @@ ul {
 }
 
 ul li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
 article h3 {
-  font-size: 1.2rem;
-  color: #d5aaff;
-  margin-top: 1.2rem;
+  font-size: 1.15rem;
+  color: #2b2b2b;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 article span {
   font-size: 0.95rem;
-  color: #888;
+  color: #777;
   display: block;
-  margin-top: 0.2rem;
+  margin-top: 0.25rem;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #f2c57c;
+  color: #004080;
 }
