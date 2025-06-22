@@ -1,5 +1,3 @@
-/* style.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
 * {
@@ -10,8 +8,8 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #f4f1ec;
-  color: #2f2f2f;
+  background-color: #1e1e24;
+  color: #e6e6e6;
   line-height: 1.6;
   padding: 2rem;
 }
@@ -19,11 +17,11 @@ body {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  background: #fffaf4;
+  background: #2c2c34;
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 2px solid #e6ddd0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 2px solid #444;
 }
 
 header {
@@ -34,23 +32,23 @@ header {
 header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #264653;
+  color: #f2c57c; /* warm pastel yellow */
 }
 
 header .subtitle {
   font-size: 1.2rem;
-  color: #52796f;
+  color: #a3d9a5; /* soft leaf green */
   margin-top: 0.5rem;
 }
 
 header .contact {
   margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: #7b7b7b;
+  color: #aaa;
 }
 
 header .contact a {
-  color: #2a9d8f;
+  color: #80d1c7; /* seafoam */
   text-decoration: none;
 }
 
@@ -60,8 +58,8 @@ section {
 
 h2 {
   font-size: 1.6rem;
-  color: #355070;
-  border-bottom: 2px solid #cdb4db;
+  color: #ecc6c6; /* faded rose */
+  border-bottom: 2px solid #6b4c7c;
   margin-bottom: 1rem;
   padding-bottom: 0.3rem;
 }
@@ -76,17 +74,18 @@ ul li {
 
 article h3 {
   font-size: 1.2rem;
-  color: #6d597a;
+  color: #d5aaff;
   margin-top: 1.2rem;
 }
 
 article span {
   font-size: 0.95rem;
-  color: #999;
+  color: #888;
   display: block;
   margin-top: 0.2rem;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #f2c57c;
 }
