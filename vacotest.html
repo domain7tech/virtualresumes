@@ -1,153 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony De Prato - ITSA Resume Format</title>
+  <meta charset="UTF-8">
+  <title>Ohio ITSA Resume Template</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      color: #000;
-      background: #fff;
     }
-    header {
-      text-align: center;
-      margin-bottom: 20px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
-    .note {
-      font-size: 0.9em;
-      background: #f9f9a1;
-      padding: 10px;
-      margin: 10px 0;
-      border-left: 5px solid #ccc;
+
+    .logo {
+      width: 250px;
+      height: 80px;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
     }
+
+    .requisition-block {
+      text-align: right;
+      max-width: 300px;
+    }
+
+    .requisition-block strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
     h2 {
-      border-bottom: 2px solid #000;
-      padding-bottom: 4px;
-      margin-top: 30px;
+      color: #003399;
+      margin-top: 40px;
     }
-    table.resume-table {
+
+    table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
     }
-    table.resume-table th, table.resume-table td {
-      border: 1px solid #000;
+
+    th, td {
+      border: 1px solid #999;
       padding: 8px;
       text-align: left;
+      font-size: 14px;
     }
-    .section {
-      margin-top: 30px;
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
     }
-    .page-break {
-      page-break-before: always;
-      margin-top: 60px;
+
+    .job-block {
+      margin-top: 40px;
+    }
+
+    .job-block strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .job-title {
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .job-dates {
+      margin-bottom: 10px;
+    }
+
+    .job-description {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .skills {
+      margin-top: 10px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo-placeholder.png" alt="OHIO ITSA Logo" style="max-height: 60px;"><br>
-    <h1>OHIO ITSA</h1>
-    <p><strong>Title/Role:</strong> Director of Information Security · Anthony De Prato</p>
-    <p><strong>VectorVMS Requisition Number:</strong> 750040</p>
-  </header>
 
-  <section class="section">
-    <h2>Education</h2>
-    <p class="note">NOTE: If a degree is listed as REQUIRED on the Requisition, you must list it here for your candidate to be considered. Required degrees will be listed on the Compliance tab of the Requisition. [...]</p>
-    <table class="resume-table">
-      <thead>
-        <tr>
-          <th>Degree</th>
-          <th>Area of Study</th>
-          <th>School/College/University</th>
-          <th>Location</th>
-          <th>Date Awarded</th>
-          <th>Transcript/Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>M.A.</td>
-          <td>Educational Technology</td>
-          <td>Pepperdine University</td>
-          <td>California, USA</td>
-          <td>2002</td>
-          <td>Verified</td>
-        </tr>
-        <tr>
-          <td>B.A.</td>
-          <td>Communications</td>
-          <td>Thomas More College</td>
-          <td>Kentucky, USA</td>
-          <td>1997</td>
-          <td>Available upon request</td>
-        </tr>
-        <tr>
-          <td>B.A.</td>
-          <td>International Studies</td>
-          <td>Thomas More College</td>
-          <td>Kentucky, USA</td>
-          <td>1997</td>
-          <td>Available upon request</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <div class="header">
+    <div class="logo">LOGO PLACEHOLDER</div>
+    <div class="requisition-block">
+      <strong>VectorVMS Requisition Number:</strong>
+      [Requisition Number do not complete]
+    </div>
+  </div>
 
-  <section class="section">
-    <h2>Certifications and Certificates</h2>
-    <p class="note">NOTE: If a certificate is listed as REQUIRED on the Requisition, you must list it here for your candidate to be considered. Any certificate listed here as awarded must be verified. [...]</p>
-    <table class="resume-table">
-      <thead>
-        <tr>
-          <th>Certification</th>
-          <th>Issued By</th>
-          <th>Date Obtained</th>
-          <th>Certificate Number</th>
-          <th>Expiration Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>CISSP</td>
-          <td>ISC2</td>
-          <td>2017</td>
-          <td>Available on request</td>
-          <td>Active</td>
-        </tr>
-        <tr>
-          <td>Certified ScrumMaster (CSM)</td>
-          <td>Scrum Alliance</td>
-          <td>2019</td>
-          <td>Available on request</td>
-          <td>Active</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <h2>[Title/Role:]</h2>
+  <p>[Title Do not Complete]</p>
 
-  <section class="section">
-    <h2>Employment History</h2>
-    <article>
-      <p><strong>Chief Information Officer · USA</strong><br>2020 – Present, St. Andrew’s Episcopal School, Jackson, MS</p>
-    </article>
-    <article>
-      <p><strong>Director of Education Technology · USA</strong><br>2019 – 2020, The Episcopal High School, Houston, TX</p>
-    </article>
-    <article>
-      <p><strong>Director of Technology · South Korea</strong><br>2017 – 2019, St. Johnsbury Academy Jeju</p>
-    </article>
-    <article>
-      <p><strong>Director of Technology & Special Projects · China</strong><br>2013 – 2017, YK Pao School, Shanghai</p>
-    </article>
-    <article>
-      <p><strong>Director of Technology · United Arab Emirates</strong><br>2009 – 2013, Dubai American Academy, Dubai</p>
-    </article>
-  </section>
+  <h2>Education:</h2>
+  <table>
+    <tr>
+      <th>[Degree (AA/AS, BA/BS, MA/MS/MBA, PhD, JD)]</th>
+      <th>[Area of Study]</th>
+      <th>[School/College/University]</th>
+      <th>[Location]</th>
+      <th>[Was the degree awarded? (Yes/No)]</th>
+      <th>[OPTIONAL: Date (MM/YY)]</th>
+    </tr>
+    <tr><td colspan="6">&nbsp;</td></tr>
+    <tr><td colspan="6">&nbsp;</td></tr>
+  </table>
 
-  <div class="page-break"></div>
+  <h2>Certifications and Certificates:</h2>
+  <table>
+    <tr>
+      <th>[Certification]</th>
+      <th>[Issued By]</th>
+      <th>[Date Obtained (MM/YY)]</th>
+      <th>[Certification Number (If Applicable)]</th>
+      <th>[Expiration Date (If Applicable)]</th>
+    </tr>
+    <tr><td colspan="5">&nbsp;</td></tr>
+    <tr><td colspan="5">&nbsp;</td></tr>
+  </table>
+
+  <div class="job-block">
+    <h2>Employment History:</h2>
+    <strong>[Company Name] – [Employment Type]</strong>
+    <div class="job-title">TITLE</div>
+    <div class="job-dates">DATES</div>
+    <div class="job-description">● [Begin Details of work experience for this job]</div>
+    <div class="skills">[Key Technologies/Skills]: [Comma Separate]</div>
+  </div>
+
 </body>
 </html>
