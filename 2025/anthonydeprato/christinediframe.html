@@ -5,7 +5,7 @@
   <title>PDF Matte Iframe Viewer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
  <style>
-  html, body {
+html, body {
   height: 100%;
   margin: 0;
 }
@@ -14,18 +14,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
 }
 .iframe-container {
-  /* Card stays centered, sized based on viewport */
-  min-width: 350px;
-  min-height: 440px;
-  max-width: 95vw;
-  max-height: 94vh;
-  width: 90vw;         /* Responsive: grows with window */
-  height: 80vh;        /* Responsive: main driver for container height */
-  padding: 0;          /* Padding not needed for sizing, remove if you want pure size */
+  min-width: 400px;
+  min-height: 500px;
+  max-width: 90vw;
+  max-height: 92vh;
+  width: 70vw;    /* Makes it bigger on desktop! */
+  height: 90vh;
+  background: #292b2f;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28), 0 1.5px 4px rgba(255,255,255,0.03) inset;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -35,25 +36,31 @@ body {
   border-radius: 12px;
   width: 100%;
   height: 100%;
-  min-width: 320px;
-  min-height: 320px;
-  max-width: 800px;   /* Never exceed 800px wide */
-  max-height: 94vh;   /* Never exceed 94% of viewport height */
-  box-sizing: border-box;
-  /* No margin needed, fills parent */
+  min-width: 350px;
+  min-height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  background: #212226;
+}
+@media (max-width: 900px) {
+  .iframe-container {
+    width: 98vw;
+    height: 80vh;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+  }
 }
 @media (max-width: 600px) {
   .iframe-container {
-    min-width: 90vw;
-    min-height: 280px;
-    width: 98vw;
-    height: 68vh;
+    width: 100vw;
+    height: 70vh;
+    border-radius: 0;
+    box-shadow: none;
   }
   .pdf-iframe {
-    min-width: 180px;
-    min-height: 160px;
-    max-width: 100vw;
-    max-height: 68vh;
+    min-width: 0;
+    min-height: 0;
   }
 }
 </style>
