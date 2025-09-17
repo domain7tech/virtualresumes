@@ -3,11 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kristin Partridge - Resume</title>
-  <link rel="stylesheet" href="/apple_style.css" />
+  <title>Kristin Partridge</title>
+  <!-- Stylesheet link with id for JS swapping -->
+  <link id="theme-stylesheet" rel="stylesheet" href="/apple_style.css" />
 </head>
 <body>
-  <div class="container">
+  <!-- Top Controls: Print and Theme Switcher -->
+  <div style="display: flex; justify-content: flex-end; gap: 1rem; margin: 2rem 0 1rem 0;">
+    <button id="print-resume"
+            style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
+      🖨️ Print Resume
+    </button>
+    <div id="theme-switcher" style="text-align:right;">
+      <label for="theme-select" style="font-weight:bold;">Theme:</label>
+      <select id="theme-select">
+        <option value="apple_style.css">Apple</option>
+        <option value="warhol_style.css">Warhol</option>
+        <option value="dark_style.css">Dark</option>
+        <option value="exec_style.css">Executive</option>
+        <option value="lite_style.css">Lite</option>
+      </select>
+    </div>
+  </div>
+
+<div class="container">
     <header>
       <h1>Kristin Partridge</h1>
       <p class="subtitle">Grade 1 and Early Years Educator | IB PYP | Reggio-Inspired Practitioner | International Experience</p>
@@ -68,8 +87,19 @@
 
     <section>
       <h2>Professional Experience</h2>
-      <article>
-        <h3>Grade 1 Teacher, Head of Department<br/><span>2022 – Present, Kaohsiung American School, Taiwan</span></h3>
+      
+
+	  <article>
+  <h3>
+    Grade 1 Teacher<br/>
+    <span>2024 – Present, KIS Reignwood Park, Thailand</span>
+  </h3>
+</article>
+
+	  
+	  <article>
+	  
+        <h3>Grade 1 Teacher, Head of Department<br/><span>2022 – 2024, Kaohsiung American School, Taiwan</span></h3>
       </article>
 
       <article>
@@ -114,13 +144,34 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Cover Letter Statement</h2>
-      <p>I am a committed educator with extensive experience as a Grade 1 and Early Years teacher in international settings. I value inquiry-based learning and collaborative school environments that foster student wellbeing and international-mindedness.</p>
-      <p>I have served in leadership roles including Head of Department, Grade Level Leader, and Faculty Advisory Committee Member, while also presenting at regional education conferences. My teaching integrates Reggio-inspired practices, the IB PYP framework, and inclusive pedagogy.</p>
-      <p>I look forward to contributing to a community where relationships, creativity, and student voice are prioritized in both learning and school culture.</p>
-      <p><strong>Warm regards,</strong><br/>Kristin Partridge</p>
-    </section>
+   
   </div>
+
+  <!-- Theme switch and print button logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Theme switcher logic
+      const themeSelect = document.getElementById('theme-select');
+      const themeStylesheet = document.getElementById('theme-stylesheet');
+      const savedTheme = localStorage.getItem('selectedTheme');
+      if (savedTheme) {
+        themeStylesheet.href = '/' + savedTheme;
+        themeSelect.value = savedTheme;
+      }
+      themeSelect.addEventListener('change', function() {
+        const newTheme = themeSelect.value;
+        themeStylesheet.href = '/' + newTheme;
+        localStorage.setItem('selectedTheme', newTheme);
+      });
+
+      // Print button logic
+      const printBtn = document.getElementById('print-resume');
+      if (printBtn) {
+        printBtn.addEventListener('click', function() {
+          window.print();
+        });
+      }
+    });
+  </script>
 </body>
 </html>
