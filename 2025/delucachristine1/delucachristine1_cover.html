@@ -4,38 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Christine Deluca - Resume</title>
-  <!-- Only the stylesheet link with an id for JS swapping -->
+  <!-- Stylesheet link with id for JS swapping -->
   <link id="theme-stylesheet" rel="stylesheet" href="/apple_style.css" />
 </head>
 <body>
-  <!-- Theme Switcher Control -->
-  
+  <!-- Top Controls: Print and Theme Switcher -->
   <div style="display: flex; justify-content: flex-end; gap: 1rem; margin: 2rem 0 1rem 0;">
-  <button id="print-resume"
-          style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
-    🖨️ Print Resume
-  </button>
-  <div id="theme-switcher" style="text-align:right;">
-    <label for="theme-select" style="font-weight:bold;">Theme:</label>
-    <select id="theme-select">
-      <option value="apple_style.css">Apple</option>
-      <option value="warhol_style.css">Warhol</option>
-      <option value="dark_style.css">Dark</option>
-      <option value="exec_style.css">Executive</option>
-      <option value="lite_style.css">Lite</option>
-    </select>
-  </div>
-</div>
-
-  <div id="theme-switcher" style="margin: 2rem 0 1rem 0; text-align:right;">
-    <label for="theme-select" style="font-weight:bold;">Theme:</label>
-    <select id="theme-select">
-      <option value="apple_style.css">Apple</option>
-      <option value="warhol_style.css">Warhol</option>
-      <option value="dark_style.css">Dark</option>
-      <option value="exec_style.css">Executive</option>
-      <option value="lite_style.css">Lite</option>
-    </select>
+    <button id="print-resume"
+            style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
+      🖨️ Print Resume
+    </button>
+    <div id="theme-switcher" style="text-align:right;">
+      <label for="theme-select" style="font-weight:bold;">Theme:</label>
+      <select id="theme-select">
+        <option value="apple_style.css">Apple</option>
+        <option value="warhol_style.css">Warhol</option>
+        <option value="dark_style.css">Dark</option>
+        <option value="exec_style.css">Executive</option>
+        <option value="lite_style.css">Lite</option>
+      </select>
+    </div>
   </div>
 
   <div class="container">
@@ -118,41 +106,31 @@
     </section>
   </div>
 
-  <!-- Minimal, native JS for theme switching -->
+  <!-- Theme switch and print button logic -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // Theme switcher logic
       const themeSelect = document.getElementById('theme-select');
       const themeStylesheet = document.getElementById('theme-stylesheet');
-
-      // Restore theme from localStorage (optional)
       const savedTheme = localStorage.getItem('selectedTheme');
       if (savedTheme) {
         themeStylesheet.href = '/' + savedTheme;
         themeSelect.value = savedTheme;
       }
-
       themeSelect.addEventListener('change', function() {
         const newTheme = themeSelect.value;
         themeStylesheet.href = '/' + newTheme;
         localStorage.setItem('selectedTheme', newTheme);
       });
+
+      // Print button logic
+      const printBtn = document.getElementById('print-resume');
+      if (printBtn) {
+        printBtn.addEventListener('click', function() {
+          window.print();
+        });
+      }
     });
   </script>
-  
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // ...theme-switch and cover letter toggle code...
-
-    // PRINT BUTTON LOGIC
-    const printBtn = document.getElementById('print-resume');
-    if (printBtn) {
-      printBtn.addEventListener('click', function() {
-        window.print();
-      });
-    }
-  });
-</script>
-
-  
 </body>
 </html>
