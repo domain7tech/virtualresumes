@@ -9,6 +9,24 @@
 </head>
 <body>
   <!-- Theme Switcher Control -->
+  
+  <div style="display: flex; justify-content: flex-end; gap: 1rem; margin: 2rem 0 1rem 0;">
+  <button id="print-resume"
+          style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
+    🖨️ Print Resume
+  </button>
+  <div id="theme-switcher" style="text-align:right;">
+    <label for="theme-select" style="font-weight:bold;">Theme:</label>
+    <select id="theme-select">
+      <option value="apple_style.css">Apple</option>
+      <option value="warhol_style.css">Warhol</option>
+      <option value="dark_style.css">Dark</option>
+      <option value="exec_style.css">Executive</option>
+      <option value="lite_style.css">Lite</option>
+    </select>
+  </div>
+</div>
+
   <div id="theme-switcher" style="margin: 2rem 0 1rem 0; text-align:right;">
     <label for="theme-select" style="font-weight:bold;">Theme:</label>
     <select id="theme-select">
@@ -120,5 +138,21 @@
       });
     });
   </script>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // ...theme-switch and cover letter toggle code...
+
+    // PRINT BUTTON LOGIC
+    const printBtn = document.getElementById('print-resume');
+    if (printBtn) {
+      printBtn.addEventListener('click', function() {
+        window.print();
+      });
+    }
+  });
+</script>
+
+  
 </body>
 </html>
