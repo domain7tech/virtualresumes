@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap');
-
+/* NO @import! 100% local, no CDN */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,8 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  /* Use a modern, system-native font stack */
+  font-family: 'Segoe UI', 'Roboto', 'Arial', 'Liberation Sans', 'sans-serif';
   background-color: #fffbec;
   color: #2e2e2e;
   line-height: 1.7;
@@ -33,7 +33,8 @@ header {
 }
 
 header h1 {
-  font-family: 'Bebas Neue', sans-serif;
+  /* Use a bold, display-style system font */
+  font-family: 'Impact', 'Arial Black', 'Arial', 'sans-serif';
   font-size: 3.5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -89,6 +90,8 @@ ul li {
 
 article h3 {
   font-size: 1.3rem;
+  /* Keep bold system font for headline impact */
+  font-family: 'Arial Black', 'Impact', 'Arial', 'sans-serif';
   color: #ff5722;
   font-weight: 700;
   margin-top: 1.5rem;
