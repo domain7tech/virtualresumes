@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christine Deluca - Resume</title>
+  <!-- Stylesheet link with id for JS swapping -->
+  <link id="theme-stylesheet" rel="stylesheet" href="/apple_style.css" />
+</head>
+<body>
+  <!-- Top Controls: Print and Theme Switcher -->
+ <!-- <div style="display: flex; justify-content: flex-end; gap: 1rem; margin: 2rem 0 1rem 0;">
+    <button id="print-resume"
+            style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
+      🖨️ Print Resume
+    </button>
+    <div id="theme-switcher" style="text-align:right;">
+      <label for="theme-select" style="font-weight:bold;">Theme:</label>
+      <select id="theme-select">
+        <option value="apple_style.css">Apple</option>
+        <option value="warhol_style.css">Warhol</option>
+        <option value="dark_style.css">Dark</option>
+        <option value="exec_style.css">Executive</option>
+        <option value="lite_style.css">Lite</option>
+      </select>
+    </div>
+  </div>-->
+
+  <div class="container">
+    <header>
+      <h1>Christine Deluca</h1>
+      <p class="subtitle">Primary School Principal | Instructional Coach</p>
+      <p class="contact">📍 Current Location Not Specified · ✉️ <a href="mailto:cdeluca@me.com">cdeluca@me.com</a></p>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Experienced educational leader and instructional coach with a strong background in primary education and curriculum development. Demonstrated success in IB and international school environments, known for collaborative leadership and commitment to inclusive, inquiry-based learning.</p>
+    </section>
+
+    <section>
+      <h2>Core Competencies</h2>
+      <ul>
+        <li>Instructional Coaching & Mentorship</li>
+        <li>Primary School Leadership</li>
+        <li>IB PYP Curriculum Development</li>
+        <li>Teacher Evaluation & Support</li>
+        <li>Strategic Planning and Implementation</li>
+        <li>Inclusive Education & Differentiation</li>
+        <li>Professional Development Design</li>
+        <li>Data-Driven Decision Making</li>
+        <li>Collaborative Team Building</li>
+        <li>Multi-lingual & Cross-cultural Communication</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Achievements & Strengths</h2>
+      <ul>
+        <li><strong>Leadership:</strong> Served as PYP Coordinator, Principal, and Instructional Coach across multiple international schools.</li>
+        <li><strong>Curriculum Impact:</strong> Led PYP curriculum alignment initiatives and supported school authorization/review processes.</li>
+        <li><strong>Professional Learning:</strong> Designed and delivered workshops for teachers and school leaders on literacy, differentiation, and inquiry-based instruction.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>School Administrator Certification</strong> – State of New Jersey (Standard Principal Cert.)</li>
+        <li><strong>Elementary Teacher Certification</strong> – New Jersey & Connecticut</li>
+        <li><strong>IB PYP Workshops</strong> – Cat. 1, 2, and Leadership training</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <article>
+        <h3>Instructional Coach<br/><span>2022 – Present, International School of Kuala Lumpur, Malaysia</span></h3>
+      </article>
+      <article>
+        <h3>Elementary Principal<br/><span>2018 – 2022, American International School of Lagos, Nigeria</span></h3>
+      </article>
+      <article>
+        <h3>Instructional Coach<br/><span>2016 – 2018, American School of Doha, Qatar</span></h3>
+      </article>
+      <article>
+        <h3>Elementary Principal<br/><span>2014 – 2016, International School of Islamabad, Pakistan</span></h3>
+      </article>
+      <article>
+        <h3>Curriculum Coordinator<br/><span>2011 – 2014, International School of Phnom Penh, Cambodia</span></h3>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Master of Education in School Leadership</strong>, The College of New Jersey, USA</li>
+        <li><strong>BA in Education</strong>, Southern Connecticut State University, USA</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cover Letter Statement</h2>
+      <p>I am a passionate instructional leader dedicated to empowering teachers, strengthening school communities, and guiding primary programs that foster student growth and well-being. With years of international experience, I bring a global perspective, deep curriculum knowledge, and a commitment to inquiry-based education. I seek to continue contributing as a collaborative and forward-thinking principal or instructional coach in a mission-aligned school environment.</p>
+      <p><strong>Warm regards,</strong><br/>Christine Deluca</p>
+    </section>
+  </div>
+
+  <!-- Theme switch and print button logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Theme switcher logic
+      const themeSelect = document.getElementById('theme-select');
+      const themeStylesheet = document.getElementById('theme-stylesheet');
+      const savedTheme = localStorage.getItem('selectedTheme');
+      if (savedTheme) {
+        themeStylesheet.href = '/' + savedTheme;
+        themeSelect.value = savedTheme;
+      }
+      themeSelect.addEventListener('change', function() {
+        const newTheme = themeSelect.value;
+        themeStylesheet.href = '/' + newTheme;
+        localStorage.setItem('selectedTheme', newTheme);
+      });
+
+      // Print button logic
+      const printBtn = document.getElementById('print-resume');
+      if (printBtn) {
+        printBtn.addEventListener('click', function() {
+          window.print();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
