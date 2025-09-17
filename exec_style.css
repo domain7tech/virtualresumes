@@ -93,6 +93,7 @@ a:hover {
 }
 
 @media print {
+  #print-resume,
   #theme-switcher {
     display: none !important;
   }
