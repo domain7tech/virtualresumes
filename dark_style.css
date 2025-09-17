@@ -89,3 +89,9 @@ a:hover {
   text-decoration: underline;
   color: #f2c57c;
 }
+
+@media print {
+  #theme-switcher {
+    display: none !important;
+  }
+}

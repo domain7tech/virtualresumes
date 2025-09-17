@@ -90,3 +90,9 @@ article span {
 a:hover {
   text-decoration: underline;
 }
+
+@media print {
+  #theme-switcher {
+    display: none !important;
+  }
+}
