@@ -1,13 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Christine Deluca - Resume</title>
-  <link rel="stylesheet" href="/apple_style.css" />
+  <!-- Only the stylesheet link with an id for JS swapping -->
+  <link id="theme-stylesheet" rel="stylesheet" href="/apple_style.css" />
 </head>
 <body>
+  <!-- Theme Switcher Control -->
+  <div id="theme-switcher" style="margin: 2rem 0 1rem 0; text-align:right;">
+    <label for="theme-select" style="font-weight:bold;">Theme:</label>
+    <select id="theme-select">
+      <option value="apple_style.css">Apple</option>
+      <option value="worhol_style.css">Warhol</option>
+      <option value="dark_style.css">Dark</option>
+      <option value="exec_style.css">Executive</option>
+      <option value="lite_style.css">Lite</option>
+    </select>
+  </div>
+
   <div class="container">
     <header>
       <h1>Christine Deluca</h1>
@@ -87,5 +99,26 @@
       <p><strong>Warm regards,</strong><br/>Christine Deluca</p>
     </section>
   </div>
+
+  <!-- Minimal, native JS for theme switching -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const themeSelect = document.getElementById('theme-select');
+      const themeStylesheet = document.getElementById('theme-stylesheet');
+
+      // Restore theme from localStorage (optional)
+      const savedTheme = localStorage.getItem('selectedTheme');
+      if (savedTheme) {
+        themeStylesheet.href = '/' + savedTheme;
+        themeSelect.value = savedTheme;
+      }
+
+      themeSelect.addEventListener('change', function() {
+        const newTheme = themeSelect.value;
+        themeStylesheet.href = '/' + newTheme;
+        localStorage.setItem('selectedTheme', newTheme);
+      });
+    });
+  </script>
 </body>
 </html>
