@@ -4,9 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrew Peeples - Resume</title>
-  <link rel="stylesheet" href="/apple_style.css" />
+  <!-- Stylesheet link with id for JS swapping -->
+  <link id="theme-stylesheet" rel="stylesheet" href="/apple_style.css" />
 </head>
 <body>
+  <!-- Top Controls: Print and Theme Switcher -->
+  <div style="display: flex; justify-content: flex-end; gap: 1rem; margin: 2rem 0 1rem 0;">
+    <button id="print-resume"
+            style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
+      🖨️ Print Resume
+    </button>
+    <div id="theme-switcher" style="text-align:right;">
+      <label for="theme-select" style="font-weight:bold;">Theme:</label>
+      <select id="theme-select">
+        <option value="apple_style.css">Apple</option>
+        <option value="warhol_style.css">Warhol</option>
+        <option value="dark_style.css">Dark</option>
+        <option value="exec_style.css">Executive</option>
+        <option value="lite_style.css">Lite</option>
+      </select>
+    </div>
+  </div>
+
   <div class="container">
     <header>
       <h1>Andrew Peeples</h1>
@@ -135,12 +154,34 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Cover Letter Statement</h2>
-      <p>I am a dedicated and experienced elementary educator with a focus on grades 1–6. My teaching background spans the IB PYP and U.S. Common Core, with experience integrating literacy and math into inquiry-based units. I’ve taught in a range of international settings and contributed to broader school communities through curriculum committees, outreach programs, and board service.</p>
-      <p>I believe in fostering inclusive, responsive classrooms where every student is supported in their learning. I welcome the opportunity to contribute to a school that values collaboration, student well-being, and a global outlook.</p>
-      <p><strong>Warm regards,</strong><br/>Andrew Peeples</p>
-    </section>
+  
   </div>
+
+  <!-- Theme switch and print button logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Theme switcher logic
+      const themeSelect = document.getElementById('theme-select');
+      const themeStylesheet = document.getElementById('theme-stylesheet');
+      const savedTheme = localStorage.getItem('selectedTheme');
+      if (savedTheme) {
+        themeStylesheet.href = '/' + savedTheme;
+        themeSelect.value = savedTheme;
+      }
+      themeSelect.addEventListener('change', function() {
+        const newTheme = themeSelect.value;
+        themeStylesheet.href = '/' + newTheme;
+        localStorage.setItem('selectedTheme', newTheme);
+      });
+
+      // Print button logic
+      const printBtn = document.getElementById('print-resume');
+      if (printBtn) {
+        printBtn.addEventListener('click', function() {
+          window.print();
+        });
+      }
+    });
+  </script>
 </body>
 </html>
