@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Bellone Resume</title>
+  <!-- Stylesheet link with id for JS swapping -->
+  <link id="theme-stylesheet" rel="stylesheet" href="/apple_style.css" />
+</head>
+<body>
+  <!-- Top Controls: Print and Theme Switcher -->
+  <div style="display: flex; justify-content: flex-end; gap: 1rem; margin: 2rem 0 1rem 0;">
+    <button id="print-resume"
+            style="font-weight: bold; background: #ffe34e; color: #222; border-radius: 7px; padding: 7px 18px; border: 2px solid #ff5faf; box-shadow: 1px 2px 8px rgba(0,0,0,0.06); cursor: pointer;">
+      🖨️ Print Resume
+    </button>
+    <div id="theme-switcher" style="text-align:right;">
+      <label for="theme-select" style="font-weight:bold;">Theme:</label>
+      <select id="theme-select">
+        <option value="apple_style.css">Apple</option>
+        <option value="warhol_style.css">Warhol</option>
+        <option value="dark_style.css">Dark</option>
+        <option value="exec_style.css">Executive</option>
+        <option value="lite_style.css">Lite</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <!-- AI: Insert Name Here -->
+      <h1>Mary Bellone</h1>
+      <!-- AI: Insert Subtitle (e.g., Profession, Certifications) -->
+      <p class="subtitle">Instructional Coach, Teacher, Math Specialist</p>
+      <!-- AI: Insert Contact Info (Location, Email, LinkedIn, etc.) -->
+      <p class="contact"></p>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <!-- AI: Insert Professional Summary Paragraph -->
+      <p>Leads and empowers teaching teams through strategic coaching, actionable feedback, and professional development initiatives, creating a collaborative culture focused on growth and excellence. Skilled in using data analysis to inform instructional planning, identify student needs and improve teacher effectiveness. Skilled facilitator of meetings and workshops, enhancing teacher engagement and knowledge sharing.</p>
+    </section>
+
+    <section>
+      <h2>Core Competencies</h2>
+      <!-- AI: List Core Competencies/Skills -->
+      <ul>
+        <li>Instructional Leadership</li>
+        <li>Data-Driven Decision Making</li>
+        <li>Team Development</li>
+        <li>Coaching and Feedback</li>
+        <li>Professional Development Design</li>
+        <li>Culturally Responsive Practices</li>
+        <li>Collaborative Teaching</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Achievements & Strengths</h2>
+      <!-- AI: List Key Achievements/Strengths -->
+      <ul>
+        <li><strong>Data-Driven Instruction:</strong> Initiated data driven dialogue with grade-level teams to inform instruction impacting 200+ students</li>
+        <li><strong>Leadership:</strong> Led a team of 20+ teachers to align teaching practices with school standards and goals</li>
+        <li><strong>Professional Development:</strong> Designed professional development for 120+ teachers ensuring alignment with school-wide standards and academic priorities</li>
+        <li><strong>Culturally Responsive Practices:</strong> Committed to promoting culturally responsive practices that meet diverse student needs and enhance equity in education</li>
+        <li><strong>Collaborative Culture:</strong> Established protocols for analyzing student work, promoting a reflective and growth-oriented teaching culture</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <!-- AI: List Certifications -->
+      <ul>
+        <li><strong>Certificate of International Leadership</strong> – Principal’s Training Center, July 2022</li>
+        <li><strong>Teacher License</strong> – State of —————</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <!-- AI: List Professional Experience as <article> blocks -->
+      <article>
+        <h3>Instructional Coach, Teacher, Math Specialist<br/><span>2017 - Present, Singapore American School, Singapore</span></h3>
+        <ul>
+          <li>Initiated data driven dialogue with grade-level teams to inform instruction impacting 200+ students</li>
+          <li>Committed to promoting culturally responsive practices that meet diverse student needs and enhance equity in education</li>
+          <li>Conducted coaching cycles with staff, providing feedback and action plans to enhance instructional effectiveness</li>
+          <li>Designed professional development for 120+ teachers, ensuring consistent alignment with school-wide standards and academic priorities</li>
+          <li>Led a team of 20+ teachers to align teaching practices with school standards and goals</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Grade 3 Teacher<br/><span>2015 - 2017, Zurich International School, Zurich</span></h3>
+        <ul>
+          <li>Fostered interactive learning through the inquiry-based curriculum of the Primary Years Program (PYP)</li>
+          <li>Promoted social and emotional growth within a supportive classroom environment using the Responsive Classroom approach</li>
+          <li>Modeled and co-taught lessons with colleagues contributing to professional growth and share instructional best practices</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Grade 4 & 5 Teacher, Instructional Coach<br/><span>2007 - 2014, International School Bangkok, Bangkok</span></h3>
+        <ul>
+          <li>Collaborated with colleagues to design and implement units of study using the Understanding by Design framework</li>
+          <li>Led staff meetings to unpack standards and benchmarks for the development of formative assessments</li>
+          <li>Established protocols for analyzing student work, promoting a reflective and growth-oriented teaching culture</li>
+          <li>Developed and led training sessions for parents and staff, focusing on effective literacy and math instruction techniques</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Grade 3 & 4 Teacher<br/><span>2003 - 2007, Crofton Meadows Elementary, USA</span></h3>
+        <ul>
+          <li>Created an engaging, student-centered classroom focused on differentiated instruction</li>
+          <li>Actively participated in curriculum alignment efforts to ensure continuity in instructional quality</li>
+        </ul>
+      </article>
+    </section>
+
+  
+    <section>
+      <h2>Education</h2>
+      <!-- AI: List Education History -->
+      <ul>
+        <li><strong>Certificate, School Management and Leadership</strong>, Harvard Graduate School of Business and Education — Online | In Progress</li>
+        <li><strong>Masters of Science, Curriculum & Instruction</strong></li>
+        <li><strong>Bachelor of Science, Elementary Education</strong></li>
+      </ul>
+    </section>
+
+
+
+  </div>
+
+  <!-- Theme switch and print button logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Theme switcher logic
+      const themeSelect = document.getElementById('theme-select');
+      const themeStylesheet = document.getElementById('theme-stylesheet');
+      const savedTheme = localStorage.getItem('selectedTheme');
+      if (savedTheme) {
+        themeStylesheet.href = '/' + savedTheme;
+        themeSelect.value = savedTheme;
+      }
+      themeSelect.addEventListener('change', function() {
+        const newTheme = themeSelect.value;
+        themeStylesheet.href = '/' + newTheme;
+        localStorage.setItem('selectedTheme', newTheme);
+      });
+
+      // Print button logic
+      const printBtn = document.getElementById('print-resume');
+      if (printBtn) {
+        printBtn.addEventListener('click', function() {
+          window.print();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
