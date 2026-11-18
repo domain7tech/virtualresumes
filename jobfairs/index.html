@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="International School Job Fair Planning Guide — Search Associates, ISS, and GRC fairs from October 2026 to April 2027: dates, cities, formats, and official fair pages in one calendar." />
+<link rel="icon" href="data:," />
+<title>International School Job Fair Planning Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#ffffff;
+    --panel:#eef2f5;
+    --panel-2:#f7f9fa;
+    --ink:#14202e;
+    --muted:#5b6d7f;
+    --line:#d8e0e7;
+    --navy:#14365e;
+    --navy-ink:#ffffff;
+    --accent:#c94f1e;
+    --accent-soft:#fdf0e9;
+    --teal:#0f6f62;
+    --teal-soft:#e6f3f0;
+    --gold:#8a6100;
+    --gold-soft:#fbf3d9;
+    --shadow:0 10px 30px rgba(20,32,46,.08);
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d141d;
+      --panel:#18222e;
+      --panel-2:#121c27;
+      --ink:#edf2f6;
+      --muted:#9fb0c0;
+      --line:#2a3747;
+      --navy:#8ab4e6;
+      --navy-ink:#0d141d;
+      --accent:#f07a3e;
+      --accent-soft:#2e1e13;
+      --teal:#4fc2b0;
+      --teal-soft:#122a27;
+      --gold:#e8c15a;
+      --gold-soft:#2c2510;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none !important} }
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--navy);text-underline-offset:3px}
+  button{font:inherit;cursor:pointer;min-height:44px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--navy);color:#fff;padding:44px 0 0}
+  @media (prefers-color-scheme: dark){ .hero{background:#101e31} }
+  .hero .kicker{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#f2b28c;margin:0 0 14px}
+  .hero h1{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:clamp(36px,6vw,58px);line-height:1.04;margin:0 0 16px;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:#f2b28c}
+  .hero .lede{font-size:clamp(16px,2.2vw,19px);line-height:1.6;color:#dbe6f2;max-width:680px;margin:0 0 28px}
+  .hero-stats{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.22)}
+  .stat{padding:16px 28px 18px 0;margin-right:28px;border-right:1px solid rgba(255,255,255,.22);padding-right:28px}
+  .stat:last-child{border-right:0}
+  .stat b{display:block;font-family:"Newsreader",Georgia,serif;font-size:30px;font-weight:600;line-height:1}
+  .stat span{font-size:12.5px;color:#b9cbdf;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:10px;padding:0 0 30px}
+  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 18px;font-weight:700;font-size:14.5px;text-decoration:none;border:1px solid transparent;min-height:44px;transition:transform .12s ease, background .12s ease}
+  .btn:active{transform:scale(.98)}
+  .btn-solid{background:#fff;color:#14365e;border-color:#fff}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+  .btn-ghost:hover{border-color:#fff}
+
+  /* ---------- Controls ---------- */
+  .controls{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 0}
+  .controls-row{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:flex-start;justify-content:space-between}
+  .filter-stack{display:flex;flex-direction:column;gap:8px}
+  .filter-line{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .filter-label{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);min-width:76px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{border:1px solid var(--line);background:var(--panel-2);color:var(--ink);border-radius:999px;padding:8px 15px;font-weight:600;font-size:14px;min-height:40px}
+  .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:0 14px;background:var(--panel-2);min-height:44px;flex:1 1 200px;max-width:300px}
+  .search svg{flex:none;color:var(--muted)}
+  .search input{border:0;background:transparent;color:var(--ink);font:inherit;font-size:15px;width:100%;outline:none;min-height:42px}
+  .result-line{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+
+  /* ---------- Schedule ---------- */
+  main{padding:8px 0 20px}
+  .month{margin-top:38px}
+  .month-head{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+  .month-head h2{font-family:"Newsreader",Georgia,serif;font-size:28px;font-weight:600;margin:0}
+  .month-head span{color:var(--muted);font-size:13.5px;font-weight:600}
+  .fair{display:grid;grid-template-columns:86px 1fr auto;gap:20px;padding:22px 4px;border-bottom:1px solid var(--line);align-items:start}
+  .datebox{background:var(--panel);border-radius:10px;text-align:center;padding:10px 6px 8px}
+  .datebox .mon{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .datebox .day{display:block;font-family:"Newsreader",Georgia,serif;font-size:32px;font-weight:600;line-height:1.05}
+  .datebox .dow{display:block;font-size:12px;color:var(--muted);font-weight:600}
+  .fair-body h3{font-size:20px;font-weight:800;margin:0 0 2px;line-height:1.25}
+  .fair-body h3 a{color:var(--ink);text-decoration:none}
+  .fair-body h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+  .dates-line{font-weight:700;font-size:14.5px;color:var(--navy);margin:0 0 4px}
+  .venue{display:flex;gap:7px;align-items:flex-start;color:var(--muted);font-size:15px;margin:0}
+  .venue svg{flex:none;margin-top:3px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .tag{font-size:12px;font-weight:700;border-radius:999px;padding:4px 10px;letter-spacing:.02em}
+  .tag-org-search{background:var(--panel);color:var(--navy);border:1px solid var(--line)}
+  .tag-org-iss{background:var(--teal-soft);color:var(--teal)}
+  .tag-format{background:var(--gold-soft);color:var(--gold)}
+  .tag-region{background:var(--panel-2);color:var(--muted);border:1px solid var(--line)}
+  .tag-status{background:var(--gold-soft);color:var(--gold)}
+  .tag-status.live{background:var(--accent-soft);color:var(--accent)}
+  .tag-status.past{background:var(--panel);color:var(--muted)}
+  .fair-actions{display:flex;flex-direction:column;gap:8px;min-width:158px}
+  .btn-cal{background:var(--ink);color:var(--bg);border:1px solid var(--ink);border-radius:8px;padding:9px 14px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+  .btn-details{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font-weight:700;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px}
+  .btn-details:hover{border-color:var(--ink)}
+  .fair.is-past{opacity:.62}
+  .empty{display:none;text-align:center;padding:48px 20px;color:var(--muted)}
+  .empty strong{display:block;font-family:"Newsreader",Georgia,serif;font-size:24px;color:var(--ink);margin-bottom:6px}
+
+  /* ---------- Planning sections ---------- */
+  .section-head{margin:52px 0 6px}
+  .section-head h2{font-family:"Newsreader",Georgia,serif;font-size:30px;font-weight:600;margin:0 0 6px}
+  .section-head p{color:var(--muted);margin:0;max-width:640px}
+  .compare{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+  .org-card{border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px;background:var(--panel-2)}
+  .org-card h3{font-size:18px;font-weight:800;margin:0 0 2px}
+  .org-card .org-count{font-family:"Newsreader",Georgia,serif;font-size:15px;font-style:italic;color:var(--accent);margin:0 0 10px}
+  .org-card p{margin:0 0 10px;color:var(--muted);font-size:15px}
+  .org-card ul{margin:0 0 14px;padding-left:18px;color:var(--muted);font-size:15px}
+  .org-card li{margin-bottom:4px}
+  .org-card a{font-weight:700;font-size:14.5px}
+  .grc-note{margin-top:16px;border:1px dashed var(--line);border-radius:14px;padding:20px 22px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;justify-content:space-between}
+  .grc-note strong{font-family:"Newsreader",Georgia,serif;font-size:19px;font-weight:600}
+  .grc-note p{margin:4px 0 0;color:var(--muted);max-width:620px}
+  .grc-note a{font-weight:700;white-space:nowrap}
+  .prep{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+  .prep li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px}
+  .prep li svg{flex:none;margin-top:3px;color:var(--teal)}
+  footer{border-top:1px solid var(--line);margin-top:52px;padding:22px 0 40px;color:var(--muted);font-size:13.5px}
+  footer p{margin:0 0 6px}
+  .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,80px);background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:999px;font-weight:700;font-size:14.5px;box-shadow:var(--shadow);transition:transform .25s ease;z-index:50;pointer-events:none}
+  .toast.show{transform:translate(-50%,0)}
+
+  @media (max-width:820px){
+    .compare{grid-template-columns:1fr}
+    .prep{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .hero{padding-top:32px}
+    .hero-stats{display:grid;grid-template-columns:1fr 1fr}
+    .stat{padding:12px 18px 14px 0;margin-right:0;padding-right:18px}
+    .stat:nth-child(2){border-right:0}
+    .stat b{font-size:24px}
+    .search{max-width:none;flex-basis:100%}
+    .filter-label{min-width:0;width:100%}
+    .fair{grid-template-columns:64px 1fr;gap:14px}
+    .datebox .day{font-size:25px}
+    .fair-actions{grid-column:1 / -1;flex-direction:row;flex-wrap:wrap}
+    .fair-actions > *{flex:1 1 140px}
+    .month-head h2{font-size:24px}
+  }
+  @media print{
+    .controls,.hero-actions,.fair-actions,.toast{display:none !important}
+    .hero{background:#fff;color:#000;padding:10px 0}
+    .hero h1 em,.hero .kicker{color:#000}
+    .hero .lede,.stat span{color:#333}
+    .fair{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">2026–27 Hiring Season · Three Organizers, One Calendar</p>
+    <h1>International School<br />Job Fair <em>Planning Guide</em></h1>
+    <p class="lede">Search Associates, ISS, and GRC run the season's main international school job fairs. Every dated fair from all three is below — in person and virtual — so you can plan travel, interviews, and deadlines from one page.</p>
+    <div class="hero-actions">
+      <button class="btn btn-solid" id="copyBtn" type="button">Copy the full schedule</button>
+      <a class="btn btn-ghost" href="#compare">Compare the organizers</a>
+    </div>
+    <div class="hero-stats" aria-label="Season at a glance">
+      <div class="stat"><b>19</b><span>Dated fairs</span></div>
+      <div class="stat"><b>3</b><span>Organizers</span></div>
+      <div class="stat"><b>13</b><span>Cities + online</span></div>
+      <div class="stat"><b>Oct – Apr</b><span>2026 – 2027</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="controls-row">
+      <div class="filter-stack">
+        <div class="filter-line">
+          <span class="filter-label" id="orgLabel">Organizer</span>
+          <div class="chips" role="group" aria-labelledby="orgLabel">
+            <button class="chip" type="button" data-org="all" aria-pressed="true">All organizers</button>
+            <button class="chip" type="button" data-org="search" aria-pressed="false">Search Associates</button>
+            <button class="chip" type="button" data-org="iss" aria-pressed="false">ISS</button>
+          </div>
+        </div>
+        <div class="filter-line">
+          <span class="filter-label" id="regionLabel">Region</span>
+          <div class="chips" role="group" aria-labelledby="regionLabel">
+            <button class="chip" type="button" data-region="all" aria-pressed="true">All regions</button>
+            <button class="chip" type="button" data-region="apac" aria-pressed="false">Asia-Pacific</button>
+            <button class="chip" type="button" data-region="emea" aria-pressed="false">Europe &amp; Middle East</button>
+            <button class="chip" type="button" data-region="americas" aria-pressed="false">North America</button>
+            <button class="chip" type="button" data-region="virtual" aria-pressed="false">Virtual</button>
+          </div>
+        </div>
+      </div>
+      <label class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="searchInput" type="search" placeholder="Search city or venue…" aria-label="Search fairs by city or venue" />
+      </label>
+    </div>
+    <p class="result-line" id="resultLine" aria-live="polite">Showing all 19 fairs</p>
+  </div>
+</div>
+
+<main class="wrap" id="schedule">
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>October 2026</h2><span>2 fairs · ISS</span></div>
+
+    <article class="fair" data-org="iss" data-region="apac" data-search="iss edu expo shenzhen china in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Shenzhen" data-venue="Shenzhen, China (venue on ISS fair page)" data-start="2026-10-17" data-end="2026-10-17" data-dates="Sat Oct 17, 2026">
+      <div class="datebox"><span class="mon">Oct</span><span class="day">17</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS EDU Expo — Shenzhen</a></h3>
+        <p class="dates-line">Sat Oct 17, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Shenzhen, China</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">In person · EDU Expo</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="virtual" data-search="iss ifair october virtual online" data-orglabel="ISS" data-name="Virtual iFair® — October" data-venue="Online (virtual)" data-start="2026-10-24" data-end="2026-10-24" data-dates="Sat Oct 24, 2026">
+      <div class="datebox"><span class="mon">Oct</span><span class="day">24</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Virtual iFair® — October</a></h3>
+        <p class="dates-line">Sat Oct 24, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg>Online — no travel needed</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">Virtual · iFair®</span><span class="tag tag-region">Online</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>November 2026</h2><span>3 fairs</span></div>
+
+    <article class="fair" data-org="search" data-region="apac" data-search="search associates singapore canadian international school" data-orglabel="Search Associates" data-name="Singapore" data-venue="Canadian International School" data-start="2026-11-13" data-end="2026-11-15" data-dates="Fri Nov 13 – Sun Nov 15, 2026">
+      <div class="datebox"><span class="mon">Nov</span><span class="day">13</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/singapore/" target="_blank" rel="noopener">Singapore</a></h3>
+        <p class="dates-line">Fri Nov 13 – Sun Nov 15, 2026 · 3 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Canadian International School</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/singapore/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="apac" data-search="iss edu expo bangkok thailand in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Bangkok" data-venue="Bangkok, Thailand (venue on ISS fair page)" data-start="2026-11-21" data-end="2026-11-21" data-dates="Sat Nov 21, 2026">
+      <div class="datebox"><span class="mon">Nov</span><span class="day">21</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS EDU Expo — Bangkok</a></h3>
+        <p class="dates-line">Sat Nov 21, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Bangkok, Thailand</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">In person · EDU Expo</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="search" data-region="emea" data-search="search associates istanbul dubai istanbul international community school marmara campus" data-orglabel="Search Associates" data-name="Istanbul (Dubai)" data-venue="Istanbul International Community School, Marmara Campus" data-start="2026-11-28" data-end="2026-11-29" data-dates="Sat Nov 28 – Sun Nov 29, 2026">
+      <div class="datebox"><span class="mon">Nov</span><span class="day">28</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/istanbul/" target="_blank" rel="noopener">Istanbul (Dubai)</a></h3>
+        <p class="dates-line">Sat Nov 28 – Sun Nov 29, 2026 · 2 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Istanbul International Community School, Marmara Campus</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Europe &amp; Middle East</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/istanbul/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>December 2026</h2><span>2 fairs · ISS</span></div>
+
+    <article class="fair" data-org="iss" data-region="virtual" data-search="iss ifair december virtual online" data-orglabel="ISS" data-name="Virtual iFair® — December" data-venue="Online (virtual)" data-start="2026-12-05" data-end="2026-12-05" data-dates="Sat Dec 5, 2026">
+      <div class="datebox"><span class="mon">Dec</span><span class="day">5</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Virtual iFair® — December</a></h3>
+        <p class="dates-line">Sat Dec 5, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg>Online — no travel needed</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">Virtual · iFair®</span><span class="tag tag-region">Online</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="apac" data-search="iss edu expo ho chi minh city vietnam in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Ho Chi Minh City" data-venue="Ho Chi Minh City, Vietnam (venue on ISS fair page)" data-start="2026-12-12" data-end="2026-12-12" data-dates="Sat Dec 12, 2026">
+      <div class="datebox"><span class="mon">Dec</span><span class="day">12</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS EDU Expo — Ho Chi Minh City</a></h3>
+        <p class="dates-line">Sat Dec 12, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Ho Chi Minh City, Vietnam</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">In person · EDU Expo</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>January 2027</h2><span>7 fairs — the busiest month</span></div>
+
+    <article class="fair" data-org="search" data-region="apac" data-search="search associates melbourne melbourne business school australia" data-orglabel="Search Associates" data-name="Melbourne" data-venue="Melbourne Business School" data-start="2027-01-03" data-end="2027-01-05" data-dates="Sun Jan 3 – Tue Jan 5, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">3</span><span class="dow">Sun</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/melbourne/" target="_blank" rel="noopener">Melbourne</a></h3>
+        <p class="dates-line">Sun Jan 3 – Tue Jan 5, 2027 · 3 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Melbourne Business School</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/melbourne/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="search" data-region="apac" data-search="search associates bangkok bangkok marriott marquis queens park thailand" data-orglabel="Search Associates" data-name="Bangkok" data-venue="Bangkok Marriott Marquis Queen's Park" data-start="2027-01-08" data-end="2027-01-10" data-dates="Fri Jan 8 – Sun Jan 10, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">8</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/bangkok/" target="_blank" rel="noopener">Bangkok</a></h3>
+        <p class="dates-line">Fri Jan 8 – Sun Jan 10, 2027 · 3 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Bangkok Marriott Marquis Queen's Park</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/bangkok/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="search" data-region="apac" data-search="search associates hong kong chinese international school" data-orglabel="Search Associates" data-name="Hong Kong" data-venue="Chinese International School" data-start="2027-01-15" data-end="2027-01-17" data-dates="Fri Jan 15 – Sun Jan 17, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">15</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/hong-kong/" target="_blank" rel="noopener">Hong Kong</a></h3>
+        <p class="dates-line">Fri Jan 15 – Sun Jan 17, 2027 · 3 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Chinese International School</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/hong-kong/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="search" data-region="emea" data-search="search associates london january millennium gloucester hotel conference centre uk" data-orglabel="Search Associates" data-name="London (January)" data-venue="Millennium Gloucester Hotel and Conference Centre" data-start="2027-01-15" data-end="2027-01-17" data-dates="Fri Jan 15 – Sun Jan 17, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">15</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/london-january/" target="_blank" rel="noopener">London (January)</a></h3>
+        <p class="dates-line">Fri Jan 15 – Sun Jan 17, 2027 · 3 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Millennium Gloucester Hotel and Conference Centre</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Europe &amp; Middle East</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/london-january/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="apac" data-search="iss edu expo shanghai china in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Shanghai" data-venue="Shanghai, China (venue on ISS fair page)" data-start="2027-01-16" data-end="2027-01-16" data-dates="Sat Jan 16, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">16</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS EDU Expo — Shanghai</a></h3>
+        <p class="dates-line">Sat Jan 16, 2027 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Shanghai, China</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">In person · EDU Expo</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="search" data-region="americas" data-search="search associates cambridge usa cambridge regency hyatt massachusetts united states" data-orglabel="Search Associates" data-name="Cambridge, USA" data-venue="Cambridge Regency Hyatt" data-start="2027-01-22" data-end="2027-01-25" data-dates="Fri Jan 22 – Mon Jan 25, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">22</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/cambridge/" target="_blank" rel="noopener">Cambridge, USA</a></h3>
+        <p class="dates-line">Fri Jan 22 – Mon Jan 25, 2027 · 4 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Cambridge Regency Hyatt</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">North America</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/cambridge/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="americas" data-search="iss edu expo atlanta usa in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Atlanta" data-venue="Atlanta, USA (venue on ISS fair page)" data-start="2027-01-30" data-end="2027-01-30" data-dates="Sat Jan 30, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">30</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS EDU Expo — Atlanta</a></h3>
+        <p class="dates-line">Sat Jan 30, 2027 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Atlanta, USA</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">In person · EDU Expo</span><span class="tag tag-region">North America</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>February 2027</h2><span>2 fairs</span></div>
+
+    <article class="fair" data-org="search" data-region="americas" data-search="search associates toronto marriott hotel eaton centre canada" data-orglabel="Search Associates" data-name="Toronto" data-venue="Marriott Hotel Eaton Centre" data-start="2027-02-06" data-end="2027-02-07" data-dates="Sat Feb 6 – Sun Feb 7, 2027">
+      <div class="datebox"><span class="mon">Feb</span><span class="day">6</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/toronto/" target="_blank" rel="noopener">Toronto</a></h3>
+        <p class="dates-line">Sat Feb 6 – Sun Feb 7, 2027 · 2 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Marriott Hotel Eaton Centre</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">North America</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/toronto/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="virtual" data-search="iss ifair february virtual online" data-orglabel="ISS" data-name="Virtual iFair® — February" data-venue="Online (virtual)" data-start="2027-02-20" data-end="2027-02-20" data-dates="Sat Feb 20, 2027">
+      <div class="datebox"><span class="mon">Feb</span><span class="day">20</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Virtual iFair® — February</a></h3>
+        <p class="dates-line">Sat Feb 20, 2027 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg>Online — no travel needed</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">Virtual · iFair®</span><span class="tag tag-region">Online</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>March 2027</h2><span>2 fairs</span></div>
+
+    <article class="fair" data-org="search" data-region="emea" data-search="search associates london march hilton paddington uk" data-orglabel="Search Associates" data-name="London (March)" data-venue="The Hilton, Paddington" data-start="2027-03-13" data-end="2027-03-14" data-dates="Sat Mar 13 – Sun Mar 14, 2027">
+      <div class="datebox"><span class="mon">Mar</span><span class="day">13</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/london-march/" target="_blank" rel="noopener">London (March)</a></h3>
+        <p class="dates-line">Sat Mar 13 – Sun Mar 14, 2027 · 2 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>The Hilton, Paddington</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Europe &amp; Middle East</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/london-march/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+
+    <article class="fair" data-org="iss" data-region="virtual" data-search="iss ifair march virtual online" data-orglabel="ISS" data-name="Virtual iFair® — March" data-venue="Online (virtual)" data-start="2027-03-20" data-end="2027-03-20" data-dates="Sat Mar 20, 2027">
+      <div class="datebox"><span class="mon">Mar</span><span class="day">20</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Virtual iFair® — March</a></h3>
+        <p class="dates-line">Sat Mar 20, 2027 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg>Online — no travel needed</p>
+        <div class="tags"><span class="tag tag-org-iss">ISS</span><span class="tag tag-format">Virtual · iFair®</span><span class="tag tag-region">Online</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="month" data-month>
+    <div class="month-head"><h2>April 2027</h2><span>1 fair</span></div>
+
+    <article class="fair" data-org="search" data-region="emea" data-search="search associates doha qatar academy msheireb school qatar" data-orglabel="Search Associates" data-name="Doha" data-venue="Qatar Academy Msheireb School" data-start="2027-04-10" data-end="2027-04-10" data-dates="Sat Apr 10, 2027">
+      <div class="datebox"><span class="mon">Apr</span><span class="day">10</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.searchassociates.com/job-fair/doha/" target="_blank" rel="noopener">Doha</a></h3>
+        <p class="dates-line">Sat Apr 10, 2027 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Qatar Academy Msheireb School</p>
+        <div class="tags"><span class="tag tag-org-search">Search Associates</span><span class="tag tag-format">In person</span><span class="tag tag-region">Europe &amp; Middle East</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.searchassociates.com/job-fair/doha/" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <div class="empty" id="emptyState">
+    <strong>No fairs match that search</strong>
+    Try a different city or venue, or clear the organizer and region filters.
+  </div>
+
+  <div class="section-head" id="compare">
+    <h2>How the three organizers differ</h2>
+    <p>Same goal — meeting schools face to face — but each organizer runs its fairs differently. Pick based on format, timing, and where you already hold a profile.</p>
+  </div>
+
+  <div class="compare">
+    <div class="org-card">
+      <h3>Search Associates</h3>
+      <p class="org-count">10 fairs · all in person</p>
+      <p>Multi-day weekend fairs where member educators and school leaders interview in the same room — offers can be made and accepted before the weekend ends.</p>
+      <ul>
+        <li>All 10 fairs in person, 2–4 days each</li>
+        <li>Strongest January lineup: Melbourne, Bangkok, Hong Kong, London, Cambridge</li>
+        <li>Attendance is for active member educators and schools</li>
+      </ul>
+      <a href="https://www.searchassociates.com/job-fairs/job-fair-schedule/" target="_blank" rel="noopener">Official schedule ↗</a> · <a href="https://app.searchassociates.com/login" target="_blank" rel="noopener">Member login ↗</a>
+    </div>
+    <div class="org-card">
+      <h3>ISS</h3>
+      <p class="org-count">9 fairs · 5 in person, 4 virtual</p>
+      <p>Two formats: in-person EDU Expos, mostly one-day stops across Asia plus Atlanta, and virtual iFair® events you can attend from anywhere.</p>
+      <ul>
+        <li>Virtual iFairs in October, December, February, and March — no travel budget needed</li>
+        <li>EDU Expos are single-day events, easier to fit around a school week</li>
+        <li>Build an ISS EDUrecruit® profile before the event; schools review it ahead of time</li>
+      </ul>
+      <a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS job fair page ↗</a>
+    </div>
+    <div class="org-card">
+      <h3>GRC</h3>
+      <p class="org-count">No fairs currently listed</p>
+      <p>GRC's events page lists no upcoming job fairs right now (checked November 18, 2026). When GRC announces dates, they'll appear on its events page first.</p>
+      <ul>
+        <li>Nothing to book yet — don't plan travel around GRC this season</li>
+        <li>Check the events page again in January, when late-season fairs are often announced</li>
+      </ul>
+      <a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC events &amp; fairs ↗</a>
+    </div>
+  </div>
+
+  <div class="grc-note">
+    <div>
+      <strong>Planning around clashes</strong>
+      <p>January is crowded: Search's Hong Kong and London fairs overlap the ISS Shanghai Expo (Jan 15–17), and Search's Cambridge fair (Jan 22–25) sits a week before the ISS Atlanta Expo (Jan 30). You can't do both sides of the Pacific in one weekend — pick a region and commit.</p>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <h2>Before you go</h2>
+    <p>ISS publishes this preparation list for its fairs; it applies just as well to Search Associates weekends.</p>
+  </div>
+  <ul class="prep">
+    <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Create or update your candidate profile before the event — EDUrecruit® for ISS, your member file for Search.</li>
+    <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Refresh your resume, credentials, references, and certifications.</li>
+    <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Review current openings and the participating schools list when it's published.</li>
+    <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Prepare a short introduction: your experience, strengths, and what you're looking for next.</li>
+    <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Decide your non-negotiables — regions, curricula, grade levels, school communities — before you're in the room.</li>
+    <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Follow up with every recruiter you spoke to while the conversation is still fresh.</li>
+  </ul>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Sources: <a href="https://www.searchassociates.com/job-fairs/job-fair-schedule/" target="_blank" rel="noopener">Search Associates — Job Fair Schedule</a> (retrieved November 14, 2026) · <a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS — Attend a Job Fair</a> and <a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC — Events and Fairs</a> (both retrieved November 18, 2026). ISS lists month and day only, so its fairs are placed in the Oct 2026 – Mar 2027 season in date order; ISS doesn't name venues on its fair page, so confirm the venue there before booking travel. Dates and venues can change — confirm on the official fair page before booking travel.</p>
+    <p>Curious what attending can do for you? See Search Associates' <a href="https://www.searchassociates.com/job-fairs/about-job-fairs/#icon-grid-2" target="_blank" rel="noopener">Benefits of Attending</a> page.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var fairs = Array.prototype.slice.call(document.querySelectorAll('.fair'));
+  var months = Array.prototype.slice.call(document.querySelectorAll('[data-month]'));
+  var orgChips = Array.prototype.slice.call(document.querySelectorAll('[data-org]'));
+  var regionChips = Array.prototype.slice.call(document.querySelectorAll('[data-region]'));
+  var searchInput = document.getElementById('searchInput');
+  var resultLine = document.getElementById('resultLine');
+  var emptyState = document.getElementById('emptyState');
+  var toast = document.getElementById('toast');
+  var activeOrg = 'all';
+  var activeRegion = 'all';
+  var total = fairs.length;
+  var toastTimer = null;
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+
+  function parseDay(s){
+    var p = s.split('-');
+    return new Date(+p[0], +p[1]-1, +p[2]);
+  }
+
+  /* Live status + countdown, computed from the visitor's date */
+  var now = new Date(); now.setHours(0,0,0,0);
+  fairs.forEach(function(f){
+    var start = parseDay(f.getAttribute('data-start'));
+    var end = parseDay(f.getAttribute('data-end')); end.setHours(23,59,59,999);
+    var el = f.querySelector('[data-status]');
+    var diff = Math.round((start - now) / 86400000);
+    if (now >= start && now <= end){
+      el.textContent = '● Happening now';
+      el.classList.add('live');
+    } else if (now > end){
+      el.textContent = 'Completed';
+      el.classList.add('past');
+      f.classList.add('is-past');
+    } else if (diff === 1){
+      el.textContent = 'Starts tomorrow';
+    } else {
+      el.textContent = 'In ' + diff + ' days';
+    }
+  });
+
+  function applyFilter(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    var visible = 0;
+    fairs.forEach(function(f){
+      var orgOk = activeOrg === 'all' || f.getAttribute('data-org') === activeOrg;
+      var regionOk = activeRegion === 'all' || f.getAttribute('data-region') === activeRegion;
+      var searchOk = !q || f.getAttribute('data-search').indexOf(q) !== -1;
+      var show = orgOk && regionOk && searchOk;
+      f.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    months.forEach(function(m){
+      var any = Array.prototype.some.call(m.querySelectorAll('.fair'), function(f){ return f.style.display !== 'none'; });
+      m.style.display = any ? '' : 'none';
+    });
+    emptyState.style.display = visible === 0 ? 'block' : 'none';
+    resultLine.textContent = visible === total && activeOrg === 'all' && activeRegion === 'all' && !q
+      ? 'Showing all ' + total + ' fairs'
+      : 'Showing ' + visible + ' of ' + total + ' fairs';
+  }
+
+  orgChips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      orgChips.forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+      activeOrg = chip.getAttribute('data-org');
+      applyFilter();
+    });
+  });
+  regionChips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      regionChips.forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+      activeRegion = chip.getAttribute('data-region');
+      applyFilter();
+    });
+  });
+  searchInput.addEventListener('input', applyFilter);
+
+  /* Add to calendar — generates a real .ics file in the browser */
+  function icsDate(d){ return d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0'); }
+  fairs.forEach(function(f){
+    var btn = f.querySelector('[data-cal]');
+    btn.addEventListener('click', function(){
+      var start = parseDay(f.getAttribute('data-start'));
+      var end = parseDay(f.getAttribute('data-end')); end.setDate(end.getDate()+1);
+      var org = f.getAttribute('data-orglabel');
+      var name = f.getAttribute('data-name');
+      var venue = f.getAttribute('data-venue');
+      var link = f.querySelector('.btn-details').href;
+      var ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//International School Job Fair Planning Guide//EN',
+        'BEGIN:VEVENT',
+        'UID:' + f.getAttribute('data-start') + '-' + name.replace(/[^a-z0-9]+/gi,'-').toLowerCase() + '@jobfairguide',
+        'DTSTART;VALUE=DATE:' + icsDate(start),
+        'DTEND;VALUE=DATE:' + icsDate(end),
+        'SUMMARY:' + org + ' Job Fair — ' + name,
+        'LOCATION:' + venue,
+        'DESCRIPTION:' + org + ' job fair: ' + name + '. Details: ' + link,
+        'URL:' + link,
+        'END:VEVENT','END:VCALENDAR'].join('\r\n');
+      var blob = new Blob([ics], {type:'text/calendar'});
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'job-fair-' + name.replace(/[^a-z0-9]+/gi,'-').toLowerCase() + '.ics';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+      showToast('Calendar file downloaded for ' + name);
+    });
+  });
+
+  /* Copy the whole schedule as pastable text */
+  document.getElementById('copyBtn').addEventListener('click', function(){
+    var lines = ['International School Job Fair Planning Guide 2026–27',''];
+    fairs.forEach(function(f){
+      lines.push(f.getAttribute('data-dates') + '\t' + f.getAttribute('data-orglabel') + '\t' + f.getAttribute('data-name') + '\t' + f.getAttribute('data-venue'));
+    });
+    lines.push('', 'Sources: https://www.searchassociates.com/job-fairs/job-fair-schedule/ · https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/ · https://www.grcfair.org/Events-And-Fairs (GRC lists no upcoming fairs as of Nov 18, 2026)');
+    var text = lines.join('\n');
+    function done(){ showToast('Schedule copied — paste it anywhere'); }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, function(){ fallback(); });
+    } else { fallback(); }
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch(e){ showToast('Copy failed — use Print instead'); }
+      ta.remove();
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
