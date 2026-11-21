@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
-<meta name="description" content="International School Job Fair Planning Guide — Search Associates, ISS, and GRC fairs from October 2026 to April 2027: dates, cities, formats, and official fair pages in one calendar." />
+<meta name="description" content="International School Job Fair Planning Guide — Search Associates, ISS, GRC, AMISA, and UNI fairs from October 2026 to April 2027: dates, cities, formats, and official fair pages in one calendar." />
 <link rel="icon" href="data:," />
 <title>International School Job Fair Planning Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -111,6 +111,9 @@
   .tag{font-size:12px;font-weight:700;border-radius:999px;padding:4px 10px;letter-spacing:.02em}
   .tag-org-search{background:var(--panel);color:var(--navy);border:1px solid var(--line)}
   .tag-org-iss{background:var(--teal-soft);color:var(--teal)}
+  .tag-org-grc{background:#fdf0e0;color:#97590f}
+  .tag-org-amisa{background:#edf3e2;color:#4c6b1f}
+  .tag-org-uni{background:#f2e9f8;color:#6d3b8a}
   .tag-format{background:var(--gold-soft);color:var(--gold)}
   .tag-region{background:var(--panel-2);color:var(--muted);border:1px solid var(--line)}
   .tag-status{background:var(--gold-soft);color:var(--gold)}
@@ -181,7 +184,7 @@
   <div class="wrap">
     <p class="kicker">2026–27 Hiring Season · Three Organizers, One Calendar</p>
     <h1>International School<br />Job Fair <em>Planning Guide</em></h1>
-    <p class="lede">Search Associates, ISS, and GRC run the season's main international school job fairs. Every dated fair from all three is below — in person and virtual — so you can plan travel, interviews, and deadlines from one page.</p>
+    <p class="lede">Search Associates, ISS, GRC, AMISA, and the University of Northern Iowa run the season's main international school job fairs. Every dated fair from all five is below — in person and virtual — so you can plan travel, interviews, and deadlines from one page.</p>
     <div class="hero-actions">
       <button class="btn btn-solid" id="copyBtn" type="button">Copy the full schedule</button>
       <a class="btn btn-ghost" href="#compare">Compare the organizers</a>
@@ -205,6 +208,9 @@
             <button class="chip" type="button" data-org="all" aria-pressed="true">All organizers</button>
             <button class="chip" type="button" data-org="search" aria-pressed="false">Search Associates</button>
             <button class="chip" type="button" data-org="iss" aria-pressed="false">ISS</button>
+            <button class="chip" type="button" data-org="grc" aria-pressed="false">GRC</button>
+            <button class="chip" type="button" data-org="amisa" aria-pressed="false">AMISA</button>
+            <button class="chip" type="button" data-org="uni" aria-pressed="false">UNI</button>
           </div>
         </div>
         <div class="filter-line">
@@ -223,14 +229,14 @@
         <input id="searchInput" type="search" placeholder="Search city or venue…" aria-label="Search fairs by city or venue" />
       </label>
     </div>
-    <p class="result-line" id="resultLine" aria-live="polite">Showing all 19 fairs</p>
+    <p class="result-line" id="resultLine" aria-live="polite">Showing all 25 fairs</p>
   </div>
 </div>
 
 <main class="wrap" id="schedule">
 
   <section class="month" data-month>
-    <div class="month-head"><h2>October 2026</h2><span>2 fairs · ISS</span></div>
+    <div class="month-head"><h2>October 2026</h2><span>3 fairs</span></div>
 
     <article class="fair" data-org="iss" data-region="apac" data-search="iss edu expo shenzhen china in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Shenzhen" data-venue="Shenzhen, China (venue on ISS fair page)" data-start="2026-10-17" data-end="2026-10-17" data-dates="Sat Oct 17, 2026">
       <div class="datebox"><span class="mon">Oct</span><span class="day">17</span><span class="dow">Sat</span></div>
@@ -246,6 +252,19 @@
       </div>
     </article>
 
+    <article class="fair" data-org="grc" data-region="apac" data-search="grc fair bangkok thailand free in-person" data-orglabel="GRC" data-name="GRC Fair — Bangkok" data-venue="Bangkok, Thailand (venue on GRC fair page)" data-start="2026-10-23" data-end="2026-10-24" data-dates="Fri Oct 23 – Sat Oct 24, 2026">
+      <div class="datebox"><span class="mon">Oct</span><span class="day">23</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC Fair — Bangkok</a></h3>
+        <p class="dates-line">Fri Oct 23 – Sat Oct 24, 2026 · 2 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Bangkok, Thailand</p>
+        <div class="tags"><span class="tag tag-org-grc">GRC</span><span class="tag tag-format">In person · Free</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
     <article class="fair" data-org="iss" data-region="virtual" data-search="iss ifair october virtual online" data-orglabel="ISS" data-name="Virtual iFair® — October" data-venue="Online (virtual)" data-start="2026-10-24" data-end="2026-10-24" data-dates="Sat Oct 24, 2026">
       <div class="datebox"><span class="mon">Oct</span><span class="day">24</span><span class="dow">Sat</span></div>
       <div class="fair-body">
@@ -262,7 +281,7 @@
   </section>
 
   <section class="month" data-month>
-    <div class="month-head"><h2>November 2026</h2><span>3 fairs</span></div>
+    <div class="month-head"><h2>November 2026</h2><span>5 fairs</span></div>
 
     <article class="fair" data-org="search" data-region="apac" data-search="search associates singapore canadian international school" data-orglabel="Search Associates" data-name="Singapore" data-venue="Canadian International School" data-start="2026-11-13" data-end="2026-11-15" data-dates="Fri Nov 13 – Sun Nov 15, 2026">
       <div class="datebox"><span class="mon">Nov</span><span class="day">13</span><span class="dow">Fri</span></div>
@@ -278,6 +297,32 @@
       </div>
     </article>
 
+    <article class="fair" data-org="grc" data-region="emea" data-search="grc fair amsterdam netherlands free in-person" data-orglabel="GRC" data-name="GRC Fair — Amsterdam" data-venue="Amsterdam, Netherlands (venue on GRC fair page)" data-start="2026-11-14" data-end="2026-11-14" data-dates="Sat Nov 14, 2026">
+      <div class="datebox"><span class="mon">Nov</span><span class="day">14</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC Fair — Amsterdam</a></h3>
+        <p class="dates-line">Sat Nov 14, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Amsterdam, Netherlands</p>
+        <div class="tags"><span class="tag tag-org-grc">GRC</span><span class="tag tag-format">In person · Free</span><span class="tag tag-region">Europe &amp; Middle East</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+    <article class="fair" data-org="grc" data-region="americas" data-search="grc amisa fair miami usa free in-person" data-orglabel="GRC & AMISA" data-name="GRC & AMISA Fair — Miami" data-venue="Miami, USA (venue on GRC fair page)" data-start="2026-11-19" data-end="2026-11-20" data-dates="Thu Nov 19 – Fri Nov 20, 2026">
+      <div class="datebox"><span class="mon">Nov</span><span class="day">19</span><span class="dow">Thu</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC & AMISA Fair — Miami</a></h3>
+        <p class="dates-line">Thu Nov 19 – Fri Nov 20, 2026 · 2 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Miami, USA</p>
+        <div class="tags"><span class="tag tag-org-grc">GRC</span><span class="tag tag-org-amisa">AMISA</span><span class="tag tag-format">In person · Free</span><span class="tag tag-region">North America</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
     <article class="fair" data-org="iss" data-region="apac" data-search="iss edu expo bangkok thailand in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Bangkok" data-venue="Bangkok, Thailand (venue on ISS fair page)" data-start="2026-11-21" data-end="2026-11-21" data-dates="Sat Nov 21, 2026">
       <div class="datebox"><span class="mon">Nov</span><span class="day">21</span><span class="dow">Sat</span></div>
       <div class="fair-body">
@@ -308,7 +353,7 @@
   </section>
 
   <section class="month" data-month>
-    <div class="month-head"><h2>December 2026</h2><span>2 fairs · ISS</span></div>
+    <div class="month-head"><h2>December 2026</h2><span>3 fairs</span></div>
 
     <article class="fair" data-org="iss" data-region="virtual" data-search="iss ifair december virtual online" data-orglabel="ISS" data-name="Virtual iFair® — December" data-venue="Online (virtual)" data-start="2026-12-05" data-end="2026-12-05" data-dates="Sat Dec 5, 2026">
       <div class="datebox"><span class="mon">Dec</span><span class="day">5</span><span class="dow">Sat</span></div>
@@ -337,10 +382,24 @@
         <a class="btn-details" href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">Fair details ↗</a>
       </div>
     </article>
+
+    <article class="fair" data-org="amisa" data-region="virtual" data-search="amisa virtual fair online free" data-orglabel="AMISA" data-name="AMISA Virtual Fair" data-venue="Online (virtual)" data-start="2026-12-12" data-end="2026-12-12" data-dates="Sat Dec 12, 2026">
+      <div class="datebox"><span class="mon">Dec</span><span class="day">12</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.amisa.us" target="_blank" rel="noopener">AMISA Virtual Fair</a></h3>
+        <p class="dates-line">Sat Dec 12, 2026 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M9 21h6"/></svg>Online — no travel needed</p>
+        <div class="tags"><span class="tag tag-org-amisa">AMISA</span><span class="tag tag-format">Virtual · Free</span><span class="tag tag-region">Online</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.amisa.us" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
   </section>
 
   <section class="month" data-month>
-    <div class="month-head"><h2>January 2027</h2><span>7 fairs — the busiest month</span></div>
+    <div class="month-head"><h2>January 2027</h2><span>9 fairs — the busiest month</span></div>
 
     <article class="fair" data-org="search" data-region="apac" data-search="search associates melbourne melbourne business school australia" data-orglabel="Search Associates" data-name="Melbourne" data-venue="Melbourne Business School" data-start="2027-01-03" data-end="2027-01-05" data-dates="Sun Jan 3 – Tue Jan 5, 2027">
       <div class="datebox"><span class="mon">Jan</span><span class="day">3</span><span class="dow">Sun</span></div>
@@ -426,6 +485,32 @@
       </div>
     </article>
 
+    <article class="fair" data-org="grc" data-region="apac" data-search="grc fair mumbai india free in-person" data-orglabel="GRC" data-name="GRC Fair — Mumbai" data-venue="Mumbai, India (venue on GRC fair page)" data-start="2027-01-23" data-end="2027-01-23" data-dates="Sat Jan 23, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">23</span><span class="dow">Sat</span></div>
+      <div class="fair-body">
+        <h3><a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC Fair — Mumbai</a></h3>
+        <p class="dates-line">Sat Jan 23, 2027 · 1 day</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Mumbai, India</p>
+        <div class="tags"><span class="tag tag-org-grc">GRC</span><span class="tag tag-format">In person · Free</span><span class="tag tag-region">Asia-Pacific</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
+    <article class="fair" data-org="uni" data-region="americas" data-search="uni university of northern iowa waterloo overseas placement in-person" data-orglabel="UNI" data-name="UNI Overseas Placement Fair — Waterloo" data-venue="University of Northern Iowa, Waterloo, Iowa" data-start="2027-01-29" data-end="2027-01-30" data-dates="Fri Jan 29 – Sat Jan 30, 2027">
+      <div class="datebox"><span class="mon">Jan</span><span class="day">29</span><span class="dow">Fri</span></div>
+      <div class="fair-body">
+        <h3><a href="https://teachoverseas.uni.edu" target="_blank" rel="noopener">UNI Overseas Placement Fair — Waterloo</a></h3>
+        <p class="dates-line">Fri Jan 29 – Sat Jan 30, 2027 · 2 days</p>
+        <p class="venue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>University of Northern Iowa, Waterloo</p>
+        <div class="tags"><span class="tag tag-org-uni">UNI</span><span class="tag tag-format">In person</span><span class="tag tag-region">North America</span><span class="tag tag-status" data-status></span></div>
+      </div>
+      <div class="fair-actions">
+        <button class="btn-cal" type="button" data-cal>Add to calendar</button>
+        <a class="btn-details" href="https://teachoverseas.uni.edu" target="_blank" rel="noopener">Fair details ↗</a>
+      </div>
+    </article>
     <article class="fair" data-org="iss" data-region="americas" data-search="iss edu expo atlanta usa in-person" data-orglabel="ISS" data-name="ISS EDU Expo — Atlanta" data-venue="Atlanta, USA (venue on ISS fair page)" data-start="2027-01-30" data-end="2027-01-30" data-dates="Sat Jan 30, 2027">
       <div class="datebox"><span class="mon">Jan</span><span class="day">30</span><span class="dow">Sat</span></div>
       <div class="fair-body">
@@ -529,7 +614,7 @@
   </div>
 
   <div class="section-head" id="compare">
-    <h2>How the three organizers differ</h2>
+    <h2>How the organizers differ</h2>
     <p>Same goal — meeting schools face to face — but each organizer runs its fairs differently. Pick based on format, timing, and where you already hold a profile.</p>
   </div>
 
@@ -558,20 +643,40 @@
     </div>
     <div class="org-card">
       <h3>GRC</h3>
-      <p class="org-count">No fairs currently listed</p>
-      <p>GRC's events page lists no upcoming job fairs right now (checked November 18, 2026). When GRC announces dates, they'll appear on its events page first.</p>
+      <p class="org-count">4 fairs · free for candidates</p>
+      <p>GRC runs free recruiting fairs for registered candidates. Its 2026–27 dates are Bangkok, Amsterdam, Miami, and Mumbai (via the JPMint Consulting season roundup, updated November 16, 2026).</p>
       <ul>
-        <li>Nothing to book yet — don't plan travel around GRC this season</li>
-        <li>Check the events page again in January, when late-season fairs are often announced</li>
+        <li>Bangkok Oct 23–24 · Amsterdam Nov 14 · Miami Nov 19–20 (with AMISA) · Mumbai Jan 23</li>
+        <li>Free to attend — register on the GRC portal ahead of time</li>
       </ul>
       <a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC events &amp; fairs ↗</a>
+    </div>
+    <div class="org-card">
+      <h3>AMISA</h3>
+      <p class="org-count">2 events · free</p>
+      <p>AMISA, the association of American international schools in South America, co-hosts the Miami fair with GRC and runs its own free virtual fair.</p>
+      <ul>
+        <li>Miami Nov 19–20 (with GRC) · Virtual Fair Dec 12</li>
+        <li>Info sessions run online in the fall — free, sign up early</li>
+      </ul>
+      <a href="https://www.amisa.us" target="_blank" rel="noopener">AMISA ↗</a>
+    </div>
+    <div class="org-card">
+      <h3>University of Northern Iowa</h3>
+      <p class="org-count">1 fair · Waterloo, Iowa</p>
+      <p>UNI's Overseas Placement Service runs a long-standing US-based fair for international school jobs, held on campus in Waterloo.</p>
+      <ul>
+        <li>Waterloo, Iowa — Fri Jan 29 – Sat Jan 30, 2027</li>
+        <li>Early bird registration opened in the fall — register on the UNI site</li>
+      </ul>
+      <a href="https://teachoverseas.uni.edu" target="_blank" rel="noopener">UNI Overseas Placement ↗</a>
     </div>
   </div>
 
   <div class="grc-note">
     <div>
       <strong>Planning around clashes</strong>
-      <p>January is crowded: Search's Hong Kong and London fairs overlap the ISS Shanghai Expo (Jan 15–17), and Search's Cambridge fair (Jan 22–25) sits a week before the ISS Atlanta Expo (Jan 30). You can't do both sides of the Pacific in one weekend — pick a region and commit.</p>
+      <p>January is crowded: Search's Hong Kong and London fairs overlap the ISS Shanghai Expo (Jan 15–17), Search's Cambridge fair (Jan 22–25) overlaps GRC's Mumbai fair (Jan 23), and UNI's Waterloo fair (Jan 29–30) lands the same weekend as the ISS Atlanta Expo (Jan 30). You can't do both sides of the Pacific in one weekend — pick a region and commit.</p>
     </div>
   </div>
 
@@ -592,7 +697,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Sources: <a href="https://www.searchassociates.com/job-fairs/job-fair-schedule/" target="_blank" rel="noopener">Search Associates — Job Fair Schedule</a> (retrieved November 14, 2026) · <a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS — Attend a Job Fair</a> and <a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC — Events and Fairs</a> (both retrieved November 18, 2026). ISS lists month and day only, so its fairs are placed in the Oct 2026 – Mar 2027 season in date order; ISS doesn't name venues on its fair page, so confirm the venue there before booking travel. Dates and venues can change — confirm on the official fair page before booking travel.</p>
+    <p>Sources: <a href="https://www.searchassociates.com/job-fairs/job-fair-schedule/" target="_blank" rel="noopener">Search Associates — Job Fair Schedule</a> (retrieved November 14, 2026) · <a href="https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/" target="_blank" rel="noopener">ISS — Attend a Job Fair</a> and <a href="https://www.grcfair.org/Events-And-Fairs" target="_blank" rel="noopener">GRC — Events and Fairs</a> (both retrieved November 18, 2026) · <a href="https://www.jpmintconsulting.com/post/2026-2027-job-fair-dates" target="_blank" rel="noopener">JPMint Consulting — 2026-2027 Job Fair Dates</a> (updated November 16, 2026; retrieved November 21, 2026) for the GRC, AMISA, and UNI dates. ISS lists month and day only, so its fairs are placed in the Oct 2026 – Mar 2027 season in date order; ISS doesn't name venues on its fair page, so confirm the venue there before booking travel. Dates and venues can change — confirm on the official fair page before booking travel.</p>
     <p>Curious what attending can do for you? See Search Associates' <a href="https://www.searchassociates.com/job-fairs/about-job-fairs/#icon-grid-2" target="_blank" rel="noopener">Benefits of Attending</a> page.</p>
   </div>
 </footer>
@@ -723,7 +828,7 @@
     fairs.forEach(function(f){
       lines.push(f.getAttribute('data-dates') + '\t' + f.getAttribute('data-orglabel') + '\t' + f.getAttribute('data-name') + '\t' + f.getAttribute('data-venue'));
     });
-    lines.push('', 'Sources: https://www.searchassociates.com/job-fairs/job-fair-schedule/ · https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/ · https://www.grcfair.org/Events-And-Fairs (GRC lists no upcoming fairs as of Nov 18, 2026)');
+    lines.push('', 'Sources: https://www.searchassociates.com/job-fairs/job-fair-schedule/ · https://dev.iss.edu/for-individuals/find-a-job/attend-a-job-fair/ · https://www.grcfair.org/Events-And-Fairs · https://www.jpmintconsulting.com/post/2026-2027-job-fair-dates (GRC, AMISA, and UNI dates, updated Nov 16, 2026)');
     var text = lines.join('\n');
     function done(){ showToast('Schedule copied — paste it anywhere'); }
     if (navigator.clipboard && navigator.clipboard.writeText){
